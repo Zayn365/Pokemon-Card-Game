@@ -4,7 +4,7 @@ class Pokedex extends Component {
    render () {
        return(
            <div className="Body">
-              <h1 className="Main">Pokedex Game</h1>
+              <h1 className="Main" style={{fontWeight:"lighter"}}>Pokedex Game</h1>
            </div>
        )
    }
