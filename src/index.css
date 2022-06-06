@@ -21,35 +21,7 @@ code {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: italic;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.4em;
+  font-size: 2rem;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.5em;
-}
-
-
-.card-container {
-  width: 20vw;
-  /* height: 25%; */
-  /* display: flex; */
-  align-items: center;
-}
-
-.Card {
-  width: 15vw;
-  height: 260px;
-  background-color:lightgrey;
-
-  border-radius: 30px;
-  text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: italic;
-}
-.space {
-  letter-spacing: 2px;
-}

@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './Pokemon.css';
 import Pokedex from './Pokedex';
-import Pokemon from './Pokemon'
+// import Pokemon from './Pokemon';
+import Pokegame from './Pokegame';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Pokedex /> 
-    <Pokemon />
+    <Pokegame />
   </React.StrictMode>
 );
 
