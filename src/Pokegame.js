@@ -29,8 +29,8 @@ class Pokegame extends Component {
         
         return(
             <div>
-                <Pokemon cards={hand1} exp={exp1} isWinner={exp1 > exp2} />
-                <Pokemon cards={hand2} exp={exp2} isWinner={exp2 > exp1} />
+                <Pokemon cards={hand1} exp={exp1} isWinner={exp1 > exp2} hand="Hand 1" />
+                <Pokemon cards={hand2} exp={exp2} isWinner={exp2 > exp1} hand="Hand 2" />
             </div>
         )
     }

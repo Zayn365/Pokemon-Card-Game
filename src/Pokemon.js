@@ -2,15 +2,15 @@ import React, { Component } from "react";
 
 class Pokemon extends Component {
   render() {
+    const {isWinner, cards, hand ,exp} = this.props;
     const padToImg = (number) => {
       return number <= 999 ? `00${number}`.slice(-3) : number;
     };
 
-    const title = this.props.isWinner ? "Winner" : "Loser";
-
-    const elements = this.props.cards.map(
+    const title = isWinner ? "Winner" : "Loser";
+    const elements = cards.map(
       ({ type, name, id, base_experience }) => (
-        <div className="Pokedex-card" key={id}>
+          <div className="Pokedex-card" key={id}>
           <h2 className="">{name}</h2>
           <img
             className="img"
@@ -28,13 +28,15 @@ class Pokemon extends Component {
     );
 
     return (
-      <div className="container">
-        <>
+      <div>
+        <h1 style={{textAlign: "center" , backgroundColor: 'grey', color: 'brown'}}>{hand}</h1>
+        <p style={{textAlign: "center", color: "rebeccapurple"}}>Total Experience: {exp}</p>
+        <div className="container">
           {elements}
           <p className={title}>
             {title}
           </p>
-        </>
+          </div>
       </div>
     );
   }
